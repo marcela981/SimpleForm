@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <link rel="icon" href="images/music-icon.ico" type="image/icon">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <main>
+            <div class="loginPage">
+                <div class="form">
+                    <div class="header">
+                        <section>
+                            <h1 id="title">
+                                Sign up for free to listen <i class="fas fa-music"></i> 
+                            </h1>
+                        </section>
+                    </div>
+                    <form action="#" id="survey-form" >
+                        <fieldset>
+                            <label for="email" id="email-label">
+                                <p id="question">What is your email?</p>
+                                <input type="email" name="email" placeholder="Put your email..." id="email" required>
+                            </label>
+                            <label for="confirmationEmail" id="confirmation-email-label">
+                                <p id="question">Confirm your email</p>
+                                <input type="email" name="confirmationEmail" placeholder="Please put the email back..." id="confirmationEmail" required>
+                            </label>
+                            <label for="password">
+                            <p id="question">Create a password</p>
+                                <input type="password" name="password" placeholder="Create a password..." id="password" required>
+                            </label>
+                            <label for="text" id="name-label">
+                            <p id="question">How do you want us to call you?</p>
+                            <input type="text" name="name" placeholder="Put a profile name..." id="name" required>
+                            </label>
+                            <label for="birthdate" class="birthdate-label">What is your birthdate?</label>
+                            <input type="date" id="birthdate" name="birthdate" required>
+
+                        </fieldset>
+                        <fieldset>
+                        <p>What is your gender?</p>
+                        <div class="radio-group">
+                            <label for="gender-men" class="radio">
+                                <input type="radio" id="gender-men" name="gender" value="Men" required> Men
+                            </label>
+                            <label for="gender-woman" class="radio">
+                                <input type="radio" id="gender-woman" name="gender" value="Woman" required> Woman
+                            </label>
+                            <label for="gender-nonbinary" class="radio">
+                                <input type="radio" id="gender-nonbinary" name="gender" value="Non binary" required> Non binary
+                            </label>
+                        </div>
+                        <label for="dropdown" id="dropdown-label">
+                            <p id="question">What is your favorite genre of music?</p>
+                            <select id="dropdown" name="music-genre" required>
+                                <option value="" disabled selected>Select a genre</option>
+                                <option value="rock">Rock</option>
+                                <option value="pop">Pop</option>
+                                <option value="classical">Indie</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="classical">Classical</option>
+                            </select>
+                        </label>                      
+                        <div class="checkbox-group">
+                            <label for="email-marketing" class="checkbox">
+                                <input type="checkbox" id="email-marketing" name="emailMarketing" value="no-marketing" required> I do not want to receive marketing messages from Spot
+                            </label>
+                            <label for="data-sharing" class="checkbox">
+                                <input type="checkbox" id="data-sharing" name="dataMarketing" value="data-sharing" required> Sharing my registration data with Spot content providers for marketing purposes
+                            </label>
+                        </div>                        
+                        </fieldset>
+                        <p id="description">By clicking Sign Up, you agree to Spot's <a href="#" target="_blank"> Terms and Conditions</a> of Use.</p>
+                        <p id="description">For more information about how Spot collects, uses, shares, and protects your personal data, see Spot's <a href="#" target="_blanc"> Privacy Policy.</a></p>
+                        <label for="suggestions" class="suggestions-label">Suggestions</label>
+                        <textarea id="suggestions" name="suggestions" placeholder="Would you like to leave a suggestion...?"></textarea>
+
+                        <input class="signUp" type="submit" id="submit" value="Sign up"  >
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
